@@ -55,10 +55,10 @@
 }
 
 .about-image-wrapper img {
-    width: 360px;
-    height: 320px;
+    width: 260px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 22px;
+    border-radius: 42px;
     border: 2px solid #9ce428;
     z-index: 2;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
