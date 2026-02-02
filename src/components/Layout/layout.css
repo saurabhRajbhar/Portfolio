@@ -1,0 +1,95 @@
+/* ---- MAIN WRAPPER ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sidebar-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #0f0f17;
+    overflow: hidden;
+}
+
+/* ---- MAIN CONTENT ---- */
+.container {
+    flex: 1;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+/* ---- SIDEBAR ---- */
+.sidebar {
+    height: 100vh;
+    background-color: #1e1e2c;
+    width: 90px;
+    position: relative;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+
+    transition: width 0.35s ease;
+}
+
+.sidebar-toggle {
+    width: 220px;
+    /* OPEN state */
+}
+
+/* ---- TOGGLE ICON WRAPPER ---- */
+.sidebar-toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* ---- TOGGLE ICON ---- */
+.sidebar-toggle-icons p svg {
+    background-color: #d8a665;
+    color: white;
+
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    height: 32px;
+    width: 32px;
+
+    box-shadow: 0 0 12px rgba(255, 170, 80, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.sidebar-toggle-icons p:hover svg {
+    transform: scale(1.15) rotate(12deg);
+    background-color: #e9b676;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        /* padding-left: 0; */
+    }
+}
+
+/* ---- MOBILE NAVBAR FIXES ---- */
+/* @media (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+} */
+
+/* ---- MOBILE NAVBAR FIXES ----
+@media (max-width: 600px) {
+    .container {
+        padding-top: 5%;
+    }
+} */
