@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.fc1ae204.css",
+    "main.js": "/Portfolio/static/js/main.1bfe9595.js",
+    "static/js/453.fd2f0c4a.chunk.js": "/Portfolio/static/js/453.fd2f0c4a.chunk.js",
+    "static/media/Admin analytics dashboard in action.png": "/Portfolio/static/media/Admin analytics dashboard in action.a9ad0a43d0e301ba9532.png",
+    "static/media/LMS.png": "/Portfolio/static/media/LMS.bfebc05c0eb2749439db.png",
+    "static/media/StudentManagementSys.png": "/Portfolio/static/media/StudentManagementSys.a9c6337c914e644ec223.png",
+    "static/media/Ecom.png": "/Portfolio/static/media/Ecom.3f418ff7bc928ac1ddfa.png",
+    "static/media/ProfilePic.jpeg": "/Portfolio/static/media/ProfilePic.51c64c88090beb2e9b4c.jpeg",
+    "static/media/Saurabhimage.jpeg": "/Portfolio/static/media/Saurabhimage.51c64c88090beb2e9b4c.jpeg",
+    "static/media/SAURABHCV.pdf": "/Portfolio/static/media/SAURABHCV.d0e68884e0c4cf6ccdb3.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.fc1ae204.css.map": "/Portfolio/static/css/main.fc1ae204.css.map",
+    "main.1bfe9595.js.map": "/Portfolio/static/js/main.1bfe9595.js.map",
+    "453.fd2f0c4a.chunk.js.map": "/Portfolio/static/js/453.fd2f0c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc1ae204.css",
+    "static/js/main.1bfe9595.js"
+  ]
+}
