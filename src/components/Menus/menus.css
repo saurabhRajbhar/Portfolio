@@ -1,0 +1,90 @@
+.menu-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Profile Image */
+.profile-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 2px solid #370aea;
+    margin: 20px auto 16px;
+    display: block;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 30px rgba(230, 86, 221, 0.5);
+}
+
+/* EXPANDED ITEMS */
+.nav-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 15px;
+}
+
+/* BOX EFFECT for expanded menu */
+.enhanced-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 204, 122, 0.2);
+    backdrop-filter: blur(8px);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.enhanced-box:hover {
+    background: rgba(255, 200, 120, 0.18);
+    border-color: rgba(255, 190, 90, 0.6);
+    transform: translateX(2px);
+}
+
+/* ICON inside expanded menu */
+.nav-icon-expanded {
+    font-size: 26px;
+}
+
+/* LABEL text */
+.nav-label {
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* COLLAPSED ICON MENU */
+.nav-items-collapsed {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.enhanced-icon {
+    font-size: 40px;
+    color: #f7d38e;
+    transition: 0.3s ease;
+}
+
+.enhanced-icon:hover {
+    text-shadow: 0 4px 15px rgba(255, 192, 76, 0.8);
+}
+
+/* 
+@media (max-width: 600px) {
+    .menu-wrapper {
+        display: none;
+    }
+} */

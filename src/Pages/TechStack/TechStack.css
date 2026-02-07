@@ -1,0 +1,223 @@
+/* ================= CONTAINER ================= */
+.tech-wrapper {
+    position: relative;
+    padding: 40px 16px;
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #0b0b10 0%, #121218 100%);
+}
+
+/* ================= GLASS INNER ================= */
+.tech-inner.glass {
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid rgba(255, 200, 90, 0.06);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= HEADER ================= */
+.tech-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.tech-title {
+    font-size: 32px;
+    background: linear-gradient(90deg, #ffb347, #ffd47a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* ================= FILTER BUTTONS ================= */
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    cursor: pointer;
+    transition: all .18s ease;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background: linear-gradient(90deg, #ff9f2f, #ffd77a);
+    color: #1b1200;
+    box-shadow: 0 6px 18px rgba(255, 160, 60, 0.18);
+    transform: translateY(-2px);
+}
+
+/* ================= MAIN AREA ================= */
+.main-area {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* ================= LEFT GRID ================= */
+.left-area {
+    flex: 1;
+}
+
+.grid-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+/* ================= SKILL CARD ================= */
+.skill-card {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.02));
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 200, 90, 0.08);
+    transition: transform .18s ease, box-shadow .18s ease;
+    min-height: 90px;
+    position: relative;
+}
+
+/* Neon border */
+.skill-card::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 14px;
+    background: linear-gradient(90deg,
+            rgba(255, 142, 0, 0),
+            rgba(255, 200, 80, 0.25),
+            rgba(255, 142, 0, 0));
+    opacity: 0;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 160, 50, 0.16);
+}
+
+.skill-card:hover::after {
+    opacity: 1;
+    animation: neonSlide 2s linear infinite;
+}
+
+.skill-icon {
+    font-size: 32px;
+    color: #ffd48a;
+}
+
+.skill-name {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ================= RIGHT SPHERE ================= */
+.right-area {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .grid-area {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .right-area {
+        display: none;
+    }
+}
+
+/* Small tablet */
+@media (max-width: 760px) {
+    .grid-area {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-title {
+        font-size: 28px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .grid-area {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skill-card {
+        padding: 10px;
+        min-height: 80px;
+    }
+
+    .skill-icon {
+        font-size: 28px;
+    }
+
+    .skill-name {
+        font-size: 12px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .grid-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= NEON ANIMATION ================= */
+@keyframes neonSlide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ================= MODAL OVERLAY ================= */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}

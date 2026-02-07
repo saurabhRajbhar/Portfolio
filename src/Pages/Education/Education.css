@@ -1,0 +1,115 @@
+.edu-scroll-section {
+    padding: 80px 20px;
+    color: white;
+    width: 100%;
+}
+
+.edu-title {
+    text-align: center;
+    font-size: 42px;
+    background: linear-gradient(90deg, #ff8b00, #ffe26f);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 40px;
+}
+
+/* Horizontal Scroll */
+.edu-horizontal-scroll {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.edu-horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.edu-horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #ffb84d;
+    border-radius: 40px;
+}
+
+/* Glass Effect Cards */
+.edu-glass-card {
+    margin-left: auto;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 200, 90, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    flex-shrink: 0;
+    /* prevents shrinking on small screens */
+}
+
+.edu-glass-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 18px rgba(255, 196, 0, 0.5);
+}
+
+.edu-glass-card h2 {
+    font-size: 22px;
+    color: #ffd788;
+}
+
+.edu-glass-card h3 {
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+.edu-glass-card p {
+    opacity: 0.8;
+}
+
+/* ======================= RESPONSIVENESS ======================= */
+
+/* Tablet Screens */
+@media (max-width: 900px) {
+    .edu-title {
+        font-size: 34px;
+    }
+
+    .edu-glass-card {
+        min-width: 260px;
+        padding: 24px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+    .edu-scroll-section {
+        padding: 50px 10px;
+    }
+
+    .edu-title {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .edu-horizontal-scroll {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .edu-glass-card {
+        min-width: 220px;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .edu-glass-card h2 {
+        font-size: 18px;
+    }
+
+    .edu-glass-card h3 {
+        font-size: 16px;
+    }
+
+    .edu-glass-card p {
+        font-size: 14px;
+    }
+}

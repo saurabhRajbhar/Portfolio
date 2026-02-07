@@ -1,0 +1,116 @@
+.about-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #0f0f1c, #16162a);
+    color: #fff;
+    gap: 60px;
+    overflow: hidden;
+}
+
+/* TEXT AREA */
+.about-content {
+    max-width: 600px;
+}
+
+.about-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff8a00, #ffd700);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* PARAGRAPH */
+.about-para {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #dcdcdc;
+}
+
+/* HIGHLIGHTS */
+.highlight {
+    background: linear-gradient(90deg, #ffb347, #ffcc33);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+.highlight-soft {
+    color: #9ce428;
+    font-weight: 500;
+}
+
+/* IMAGE AREA */
+.about-image-wrapper {
+    position: relative;
+    width: 600px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-wrapper img {
+    width: 260px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 42px;
+    border: 2px solid #9ce428;
+    z-index: 2;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* GLOW */
+.image-glow {
+    position: absolute;
+    width: 300px;
+    height: 320px;
+    background: radial-gradient(circle,
+            rgba(255, 170, 60, 0.45),
+            transparent 70%);
+    filter: blur(35px);
+    z-index: 1;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+
+@media (max-width: 600px) {
+    .about-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .about-title {
+        font-size: 40px;
+    }
+
+    .about-para {
+        font-size: 17px;
+    }
+
+    .about-image-wrapper {
+        width: 220px;
+        height: 300px;
+    }
+
+    .about-image-wrapper img {
+        width: 200px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-para {
+        font-size: 16px;
+    }
+}

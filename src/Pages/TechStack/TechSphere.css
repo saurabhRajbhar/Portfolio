@@ -1,0 +1,79 @@
+.sphere-wrap {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sphere {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 16s linear infinite;
+}
+
+.sphere .dot {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    color: #ffd48a;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 200, 90, 0.12);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+
+/* place dots around the sphere */
+.sphere .dot:nth-child(1) {
+    transform: rotateY(0deg) translateZ(110px);
+    left: calc(50% - 22px);
+    top: 10px;
+}
+
+.sphere .dot:nth-child(2) {
+    transform: rotateY(60deg) translateZ(110px);
+    left: calc(50% - 22px);
+    top: 40px;
+}
+
+.sphere .dot:nth-child(3) {
+    transform: rotateY(120deg) translateZ(110px);
+    left: calc(50% - 22px);
+    top: 110px;
+}
+
+.sphere .dot:nth-child(4) {
+    transform: rotateY(180deg) translateZ(110px);
+    left: calc(50% - 22px);
+    top: 170px;
+}
+
+.sphere .dot:nth-child(5) {
+    transform: rotateY(240deg) translateZ(110px);
+    left: calc(50% - 22px);
+    top: 210px;
+}
+
+.sphere .dot:nth-child(6) {
+    transform: rotateY(300deg) translateZ(110px);
+    left: calc(50% - 22px);
+    top: 140px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(10deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(10deg) rotateY(360deg);
+    }
+}
+
+/* hide on very small screens handled by TechStack.css */
