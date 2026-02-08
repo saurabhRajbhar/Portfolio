@@ -1,6 +1,8 @@
 {
-    "name": "my-app",
+    "name": "backend",
     "version": "0.1.0",
+    "type": "module",
+    "main": "index.js",
     "private": true,
     "dependencies": {
         "@testing-library/dom": "^10.4.0",
